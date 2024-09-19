@@ -23,23 +23,23 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: rgb(255,250,250,0.90);
-  text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+  color: rgba(255, 250, 250, 0.97);
+  text-shadow: 2px 2px 4px rgba(85, 53, 2, 0.75);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .topnav a:hover {
-  background-color: rgb(128,128,128,0.25);
-  color: rgb(255,215,0,0.75);
+  background-color: rgba(224, 104, 6, 0.886);
+  color: rgba(222, 249, 17, 0.95);
 }
 
 .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
 }
 
 .card {
@@ -47,11 +47,27 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid rgb(211,211,211,0.5);
+  border: 1px solid rgba(211, 211, 211, 0.368);
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
   border-radius: 15px;
   font-family: sans-serif;
 }
+
+  .boton {
+    border: 1px solid rgba(211, 211, 211, 0.368);
+    background-color: blue;
+    color: white;
+    padding: 10px;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif
+
+  }
+
+  .boton:hover {
+    background-color: #97a7e7;
+    
+  }
 
 .cardTitle {
   font-size: 24px;
@@ -65,7 +81,7 @@ body {
 }
 
 .cardFooter {
-  background: rgb(50,205,50,0.25);
+  background: rgba(25, 236, 25, 0.888);
   border-radius: 0 0 15px 15px;
   padding: 10px;
   text-align: center;
@@ -73,9 +89,21 @@ body {
 
 .cardFooter a {
   text-decoration: none;
-  color: rgb(0,0,255,0.80);
+  color: rgba(6, 78, 19, 0.8);
   text-shadow: 2px 2px 4px rgb(0,0,0,0.25);
 }
+
+.cardFooter:hover {
+  background: rgba(113, 231, 113, 0.888);
+  
+}
+
+.cardFooter a:hover{
+  color: white;
+}
+
+
+
 
 @media screen and (max-width: 600px) {
   .container {
@@ -88,6 +116,6 @@ body {
   opacity: 0.5;
   text-align: center;
   padding: 20px;
-  color: rgb(255,250,250,0.90);
-  text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+  color: rgba(255, 250, 250, 0.957);
+  text-shadow: 2px 2px 4px rgba(49, 7, 164, 0.75);
 }
