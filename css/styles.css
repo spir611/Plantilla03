@@ -7,6 +7,10 @@ body {
   font-size: 14px;
 }
 
+#main-content{
+  display: none;
+}
+
 
 /*estilo del header*/
 .header {
