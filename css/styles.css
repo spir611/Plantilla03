@@ -19,7 +19,7 @@ body {
   padding-bottom:40px;
   min-width: 300px;
   max-width: 400px;
-  height: 300px;
+  height: 400px;
   border: 1px solid rgba(211, 211, 211, 0.368);
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
   border-radius: 15px;
@@ -37,7 +37,7 @@ body {
 }
 
 .wideInput {
-  width: 200px; 
+  width: 270px; 
 }
 
 
@@ -46,8 +46,17 @@ body {
     font-weight: bold;
     margin-top: 25px;
     margin-bottom:35px;
-    
+}
 
+input {
+  font-size: 1.6em;
+  padding: 5px;
+  border-radius:10px;
+  border: 1px solid grey;
+}
+
+label {
+  font-size: 1.3em;
 }
 
 .submitButton{
