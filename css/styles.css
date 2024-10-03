@@ -7,10 +7,67 @@ body {
   font-size: 14px;
 }
 
-#main-content{
+#mainContent{
   display: none;
 }
 
+#loginCard{
+  display: block;
+  align-items: center;
+  background-color: rgb(215, 215, 249);
+  padding-top:5px;
+  padding-bottom:40px;
+  min-width: 300px;
+  max-width: 400px;
+  height: 300px;
+  border: 1px solid rgba(211, 211, 211, 0.368);
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(7, 10, 46);
+  
+  margin:auto;
+  margin-top:10px;
+  margin-bottom:25px;
+}
+
+::placeholder{
+  color: lightgrey;
+}
+
+.wideInput {
+  width: 200px; 
+}
+
+
+.loginTitle{
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom:35px;
+    
+
+}
+
+.submitButton{
+  border: 1px solid rgba(211, 211, 211, 0.368);
+  background-color: blue;
+  color: white;
+  padding: 10px;
+box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+border-radius: 15px;
+font-family: sans-serif;
+font-weight: bold;
+margin-top: 35px;
+
+
+
+}
+
+.submitButton:hover{
+    background-color: rgb(149, 148, 227);
+}
 
 /*estilo del header*/
 .header {
