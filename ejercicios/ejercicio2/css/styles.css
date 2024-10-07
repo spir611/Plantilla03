@@ -1,17 +1,17 @@
-/*estilo general del body*/
+/***********************estilo general del body************************/
 body {
     background: url(../img/bgblanco.png) repeat;
     text-align: justify;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 14px;
     margin:0;
-    padding:0;
   }
   
   #mainContent{
     display: none;
   }
   
+  /****************login card****************************/
   #loginCard{
     display: block;
     align-items: center;
@@ -20,7 +20,7 @@ body {
     padding-bottom:40px;
     min-width: 300px;
     max-width: 400px;
-    height: 300px;
+    height: 400px;
     border: 1px solid rgba(211, 211, 211, 0.368);
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;
     border-radius: 15px;
@@ -38,7 +38,7 @@ body {
   }
   
   .wideInput {
-    width: 200px; 
+    width: 270px; 
   }
   
   
@@ -47,8 +47,17 @@ body {
       font-weight: bold;
       margin-top: 25px;
       margin-bottom:35px;
-      
+  }
   
+  input {
+    font-size: 1.6em;
+    padding: 5px;
+    border-radius:10px;
+    border: 1px solid grey;
+  }
+  
+  label {
+    font-size: 1.3em;
   }
   
   .submitButton{
@@ -61,16 +70,13 @@ body {
   font-family: sans-serif;
   font-weight: bold;
   margin-top: 35px;
-  
-  
-  
   }
   
   .submitButton:hover{
       background-color: rgb(149, 148, 227);
   }
   
-  /*estilo del header*/
+  /*********************estilo del header*******************************/
   .header {
     display: flex;
     justify-content: space-between;
@@ -107,10 +113,12 @@ body {
   }
   
   
+  /*************************estilo de menu********************************/
   .topnav {
     overflow: hidden;
     background-color: rgba(2, 2, 11, 0.957);
     opacity: 0.95;
+  
   }
   
   .topnav a {
@@ -132,13 +140,12 @@ body {
     
   }
   
-  /* Estilo para el contenedor del menú desplegable */
+  /******************* Estilo para el contenedor del menú desplegable numbers**********/
   .dropdown {
     float: left;
     overflow: hidden;
   }
   
-  /* Estilo para el botón del menú desplegable */
   .dropdown .dropbtn {
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -152,7 +159,6 @@ body {
     cursor: pointer;
   }
   
-  /* Estilo para el contenido del menú desplegable */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -162,7 +168,7 @@ body {
     z-index: 1;
   }
   
-  /* Estilo para los enlaces dentro del menú desplegable */
+  
   .dropdown-content a {
     float: none;
     color: rgba(255, 250, 250, 0.97);
@@ -181,185 +187,181 @@ body {
     display: block;
   }
   
+  
   /*************estilo del contenedor central********/
   .container {
     display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;
-    gap: 20px; 
-    
+        justify-content: center;
+    width:100%;
+   
   }
-  
-  
 
 
-  /*************estilo del contenedor central********/
-  .container {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;
-    gap: 20px; 
+  /*************************estilo carta del cambio de bases****************************/
+  .cardCambioBases{
     
-  }
-  
-  
-  /**************estilo del card********************/
-  .card {
     display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
     min-width: 300px;
     max-width: 500px;
-    border: 1px solid rgba(211, 211, 211, 0.368);
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    box-shadow: 3px 3px 9px 5px #d3d3d3d1;
     border-radius:15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    color: rgb(7, 10, 46);
-    background-color:white;
-    margin:25px;
-  }
-  
-  .card:hover {
-    box-shadow: 3px 3px 9px 5px #d3d3d3d1;
-      background-color: rgba(255, 255, 255, 0.9); 
-  }
-  
-  
-    .boton {
-      border: 1px solid rgba(211, 211, 211, 0.368);
-      background-color: blue;
-      color: white;
-      padding: 10px;
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius: 15px;
-    font-family: sans-serif;
-    font-weight: bold;
-  
-    }
-  
-    .boton:hover {
-      background-color:rgb(149, 148, 227);
-      
-    }
-  
-  .cardTitle {
-    font-size: 24px;
-    font-weight: bolder;
-    padding: 10px 10px 0 10px;
-    ;
-  }
-  
-  .card-img{
-    padding: 30px;
-    
-  }
-  
-  .cardBody {
-    padding: 10px;
-    flex: 1 1 100%;
-  }
-  
-  .cardFooter {
-    background: rgb(149, 148, 227);
-    border-radius: 0 0 15px 15px;
-    /* padding: 10px; */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-weight: bolder;
-    width: 100%;
-    
-  }
-  
-  .cardFooter a {
-    text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 4px rgb(0,0,0,0.25);
-  }
-  
-  .cardFooter:hover {
-    background: blue;
-    color:white;
-    
-  }
-  
-  .cardFooter a:hover{
-    color: white;
+    background-color:rgb(215, 215, 249);
+    margin-right:5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+    height: auto;
   }
 
-  
-  .calculator {
-    background-color:rgb(149, 148, 227);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 85%;
-    margin: auto;
-    margin-bottom: 10px;
-   
-  }
-  
-  .screen {
-    width: 95%;
-    height: 60px;
-    font-size: 2rem;
-    text-align: right;
-    margin-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #222;
-    color: white;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  .btn {
-    width: 23%;
-    margin:2px;
-    height: 60px;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: rgb(215, 215, 249);
-  }
-  
-  .customBorder{
-    border-radius: 15px; 
-  }
-  
-  .customColor{
-    color: blue !important;
-  }
-  /**********media queries**************/
-   @media screen and (max-width: 600px) {
-    .container {
+    .cardTitle{
       width: 100%;
+      color: blue;
+      opacity:.7;
+      
     }
-  } 
+
+    .numero{
+      margin: 10px;
+      font-weight: bolder;
+      color: rgb(129, 125, 239);
+      font-size: 1.2em;
+    }
+
+    
+
+    input{
+      box-shadow: 2px 2px 2px rgb(149, 148, 227);
+      border: 1px rgb(149, 148, 227); 
+      width:90%;
+    }
+
+
+    .buttons{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top:20px;
+      margin-bottom:20px;
+      
+    }
+
+    .btn{
+      font-size:1.2em;
+      background-color: rgb(129, 125, 239);
+      width: auto;
+      padding: 7px;
+      border-radius: 10px;;
+      color: white;
+    }
+
+    .btn:hover{
+      background-color: blue;
+    }
+
+    .clearButton{
+      
+      font-size:1.2em;
+      background-color: blue;
+      width: auto;
+      padding: 7px;
+      border-radius: 10px;;
+      color: white;
+      margin:auto;
+      margin-top:5px;
+      margin-bottom:20px;
+    }
+
+    .clearButton:hover{
+      background-color: blue;
+      opacity: .5;
+    }
+
+    .resultado{
+      margin:10px;
+      margin-top: 25px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: rgb(129, 125, 239);
+    }
+
+  .footerRes{
+      display:flex;
+      justify-content: center;
+      justify-items: center;
+      box-shadow: 2px 2px 2px rgb(149, 148, 227);
+      border-radius:15px;
+      height: 50px;
+      
+      margin:auto;
+      margin-top: 10px;
+      margin-bottom:30px;
+      background-color: white;
+      padding:5px;
+      font-size:1.5em;
+      width: 90%;
+      
+}
+/*********************card footer pagina siguiente********************/
+.cardFooter {
+  background: rgb(149, 148, 227);
+  border-radius: 0 0 15px 15px;
+  color: white;
+  /* padding: 10px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+  width: 100%;
   
+}
+
+.cardFooter a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0,0,0,0.25);
+}
+
+.cardFooter:hover {
+  background: blue;
+  color:white;
   
-  /************estilo del footer**********/
-  .footer {
-    /*background: url(../img/bgblue2.png) repeat;*/
-    background-color: blue;
-    opacity: 0.5;
-    text-align: center;
-    padding: 20px;
-    color: rgba(255, 250, 250, 0.957);
-    text-shadow: 2px 2px 4px rgba(49, 7, 164, 0.75);
-    width:100%;
+}
+
+.cardFooter a:hover{
+  color: white;
+}
+
+
+
+
+/***********************estilo del footer pagina**************/
+.footer {
+ 
+  background-color: blue;
+  opacity: 0.5;
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 250, 250, 0.957);
+  text-shadow: 2px 2px 4px rgba(49, 7, 164, 0.75);
+  width:100%;
+}
+
+/****************media queries************************/
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
   }
+  .cardCambioBases{
+    width: 90%;
+    min-width: 290px;
+    margin-right: 2px;
+    margin-left:2px;
+  }
+
+} 

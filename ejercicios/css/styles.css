@@ -1,28 +1,27 @@
-/*estilo general del body*/
+/*********************estilo general del body*******************/
 body {
     background: url(../img/bgblanco.png) repeat;
     text-align: justify;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 14px;
+    margin:0;
+
   }
-  
   #mainContent{
     display: block;
   }
   
- 
+
   
   
   .wideInput {
     width: 200px; 
   }
   
+
+
   
-  
-  
-  
-  
-  /*estilo del header*/
+  /*********************estilo del header*****************/
   .header {
     display: flex;
     justify-content: space-between;
@@ -84,6 +83,9 @@ body {
     opacity: .9;
     
   }
+
+
+
   
   /* Estilo para el contenedor del menú desplegable */
   .dropdown {
@@ -91,7 +93,7 @@ body {
     overflow: hidden;
   }
   
-  /* Estilo para el botón del menú desplegable */
+  
   .dropdown .dropbtn {
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -105,7 +107,7 @@ body {
     cursor: pointer;
   }
   
-  /* Estilo para el contenido del menú desplegable */
+  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -115,7 +117,7 @@ body {
     z-index: 1;
   }
   
-  /* Estilo para los enlaces dentro del menú desplegable */
+ 
   .dropdown-content a {
     float: none;
     color: rgba(255, 250, 250, 0.97);
@@ -129,29 +131,118 @@ body {
     background-color: rgb(190, 190, 244);
   }
   
-  /* Mostrar el contenido del menú desplegable al pasar el ratón */
+  
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
+  /***********center banner***************/
+  .cardContainerEj {
+    background-color: black;
+    box-shadow: 3px 7px 24px rgb(149, 148, 227);
+    min-width: 300px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    position: relative; /* Necesario para que z-index funcione */
+    text-align: center;
+    height: auto;
+}
+
+.username{
+  font-family: cursive;
+  padding: 2px;
+  margin-top: 5px;
+  color: rgb(190, 190, 244);
+  font-size: 1.7em;
+  font-weight: bold;
+  text-shadow: 4px 4px 5px rgba(21, 6, 34, 0.5);
+  display: block;
+  position: relative; /* Necesario para que z-index funcione */
+  z-index: 1; /* Asegura que el texto esté por encima de otros elementos */ 
+}
+.cardTitleEj {
+    font-family: cursive;
+    padding-top: 20px;
+    padding-bottom:2px;
+    margin-top: auto;
+    color: rgb(190, 190, 244);
+    font-size: 1.7em;
+    font-weight: bold;
+    display: block;
+    position: relative; /* Necesario para que z-index funcione */
+    z-index: 1; /* Asegura que el texto esté por encima de otros elementos */
+}
+
+.cardImgEj img {
+    max-width: 100%;
+    filter:blur(1px);
+    height: 290px;
+    margin: 0px ; /* Añadir margen alrededor de la imagen */
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    bottom: 15%; /* Ajusta la posición vertical */
+    left: 0%; /* Ajusta la posición horizontal */
+    rotate:-30deg;
+    z-index: 0; /* Asegura que la imagen esté debajo del texto */
+}
+
+.cardFooterEj {
+  color: rgb(190, 190, 244);
+  font-size: 1.7em;
+    font-weight: bold;
+    display: block;
+    position: relative; /* Necesario para que z-index funcione */
+    z-index: 1; 
+    Margin-top: 10px;
+    padding:25px;
+    padding-top: 35px; 
+}
+
+
+/***********************card footer pagina siguiente***************/
+.cardFooter {
   
-  /*************estilo del contenedor central********/
-  .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+  width: 100%;
+  
+}
+
+.cardFooter a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0,0,0,0.25);
+}
+
+.cardFooter:hover {
+  background: blue;
+  color:white;
+  
+}
+
+.cardFooter a:hover{
+  color: white;
+} 
+   /*************estilo del contenedor central********/
+   .container {
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
-    gap: 20px; 
+    
     
   }
   
   
-  /**************estilo del card********************/
+  /**************estilo del card para los ejercicios  index.html********************/
   .card {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 300px;
     border: 1px solid rgba(211, 211, 211, 0.368);
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;
     border-radius: 15px;
@@ -160,6 +251,8 @@ body {
     color: rgb(7, 10, 46);
     background-color:white;
     margin:25px;
+    overflow:hidden;
+    box-sizing: border-box;
   }
   
   .card:hover {
@@ -193,13 +286,17 @@ body {
   }
   
   .card-img{
-    padding: 10px;
-    
+    padding: 5px;
+    width:98%;
+    border-radius: 25px;
+    margin: auto;
+    display: block
   }
   
   .cardBody {
     padding: 10px;
     flex: 1 1 100%;
+    width:100%;
   }
   
   .cardFooter {
@@ -208,6 +305,7 @@ body {
     padding: 10px;
     text-align: center;
     font-weight: bolder;
+    width:100%;
   }
   
   .cardFooter a {
@@ -231,8 +329,9 @@ body {
   
   .customColor{
     color: blue !important;
-  }
-  /**********media queries**************/
+  } 
+  
+  /*************************media queries**************/
    @media screen and (max-width: 600px) {
     .container {
       width: 100%;
@@ -240,7 +339,7 @@ body {
   } 
   
   
-  /************estilo del footer**********/
+  /************estilo del footer***********************/
   .footer {
     /*background: url(../img/bgblue2.png) repeat;*/
     background-color: blue;

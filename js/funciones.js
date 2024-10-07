@@ -80,5 +80,58 @@ function factorial(n){
     }
 
     return n*factorial(n-1n);
-     
+    
 }
+
+
+function convertToBinary(decimalNumber){
+    if (decimalNumber === 0) {
+        return "0";
+    }
+    let binario = "";
+    while (decimalNumber > 0) {
+        binario = (decimalNumber % 2)+binario ;
+        decimalNumber = Math.floor(decimalNumber / 2);
+    }
+    return binario;
+
+}
+
+
+function convertToOctal(decimalNumber){
+    if (decimalNumber < 0) {
+        return "-" + convertToOctal(-decimalNumber);
+    } else if (decimalNumber === 0) {
+        return "0";
+    } else {
+        let octal = "";
+        while (decimalNumber > 0) {
+            const remainder = decimalNumber % 8;
+            octal = remainder + octal;
+            decimalNumber = Math.floor(decimalNumber / 8);
+        }
+        return octal;
+    }
+
+}
+    
+function convertToHex(decimalNumber){
+    
+        if (decimalNumber < 0) {
+            return "-" + convertToHex(-decimalNumber);
+        } else if (decimalNumber === 0) {
+            return "0";
+        } else {
+            const hexChars = "0123456789ABCDEF";
+            let hexadecimal = "";
+            while (decimalNumber > 0) {
+                const remainder = decimalNumber % 16;
+                hexadecimal = hexChars[remainder] + hexadecimal;
+                decimalNumber = Math.floor(decimalNumber / 16);
+            }
+            return hexadecimal;
+        }
+}
+
+
+    

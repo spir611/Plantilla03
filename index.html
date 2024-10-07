@@ -8,6 +8,9 @@
   <title>Javascript</title>
   <link href="./img/favicon.ico" rel="icon" type="image/x-icon" >
   <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  <script defer src="./js/setCookie.js" type="text/javascript"></script>
+  <script defer src="./js/getCookie.js" type="text/javascript"></script>
+  <script defer src="./js/deleteCookie.js" type="text/javascript"></script>
   <script defer src="./js/login.js" type="text/javascript"></script>
 
 </head>
@@ -28,21 +31,7 @@
       <img src="./img/FotoAlumno.jpg" alt="Imagen de Sandra Pirpamer">
     </div>
   </div>
-  <!-- ---------MENU----------- -->
-  <div class="topnav">
-    <a href="https://www.w3schools.com/js/default.asp">w3schools</a>
-    <a href="https://es.javascript.info/js">javascript.info</a>
-    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
-    <a href="https://github.com/spir611/Plantilla03">GITHUB</a>
-    <div class="dropdown">
-      <button class="dropbtn">NUMBERS</button>
-      <div class="dropdown-content">
-          <a href="./ejercicios/ejercicio1/index.html">Calculadora</a>
-          <a href="./ejercicios/ejercicio2/index.html">Cambio de Bases</a>
-      </div>
-    </div>    
-  </div>
-
+  
   <br />
   <div class="container">
 <!-- loginForm-->  
@@ -59,24 +48,10 @@
           <label for="password">Introduce la contraseña (real: 1234)</label><br>
           <input type="password" id="password" name="password" value="" required class="wideInput"/><br><br>
           <input class="submitButton" type="submit" value="Ingresar">
+
         </form>
       </div>
       <p id="messageBienvenida"></p>    
-    </div>
-
-<!-- ------MAIN CONTENT------ -->
-  
-    <div  id="mainContent">
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <h1>Bienvenido/a a la página web</h1>
-      <p>Selecciona una de las actividades del desplegable NUMBERS.</p>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
     </div>
   </div>
   <!-- ---------FOOTER----------- -->
