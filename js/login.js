@@ -21,6 +21,7 @@ const topnav=document.getElementById("topnav");
  if(getCookie("logged")==="true"){
     console.log(getCookie("logged"));
     window.location.href="../ejercicios/ejercicios.html";
+    console.log(window.location.href);
 } 
 
 //creamos un evento para cuando se hace clic en en boton de Ingresar
