@@ -20,7 +20,7 @@ const topnav=document.getElementById("topnav");
 //comprobamos la existencia de una cookie
  if(getCookie("logged")==="true"){
     console.log(getCookie("logged"));
-    window.location.href="file:///C:/Users/spirp/OneDrive/a_daw_2curso/DWdecliente/spir611/Cookies_Numeros/ejercicios/ejercicios.html";
+    window.location.href="../ejercicios/ejercicios.html";
 } 
 
 //creamos un evento para cuando se hace clic en en boton de Ingresar
@@ -38,7 +38,7 @@ loginForm.addEventListener("submit", function (event) {
                 console.log(document.cookie);  
         loginForm.reset();  
         //redireccion a la página principal de los ejercicios   
-        window.location.href="file:///C:/Users/spirp/OneDrive/a_daw_2curso/DWdecliente/spir611/Cookies_Numeros/ejercicios/ejercicios.html";
+        window.location.href="../ejercicios/ejercicios.html";
              
 
     }else{
@@ -53,7 +53,7 @@ loginForm.addEventListener("submit", function (event) {
 
 logoutButton.addEventListener("click", function(event) {
     deleteCookie("logged");
-    window.location.href="file:///C:/Users/spirp/OneDrive/a_daw_2curso/DWdecliente/spir611/Cookies_Numeros/index.html";
+    window.location.href="../index.html";
 
 
 }); 
