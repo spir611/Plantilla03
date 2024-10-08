@@ -20,7 +20,7 @@ const topnav=document.getElementById("topnav");
 //comprobamos la existencia de una cookie
  if(getCookie("logged")==="true"){
     console.log(getCookie("logged"));
-    window.location.href="../ejercicios/ejercicios.html";
+    window.location.href="./main.html";
     console.log(window.location.href);
 } 
 
@@ -39,7 +39,7 @@ loginForm.addEventListener("submit", function (event) {
                 console.log(document.cookie);  
         loginForm.reset();  
         //redireccion a la página principal de los ejercicios   
-        window.location.href="../ejercicios/ejercicios.html";
+        window.location.href="./main.html";
              
 
     }else{

@@ -7,9 +7,6 @@ body {
     margin:0;
 
   }
-  #mainContent{
-    display: block;
-  }
   
 
   
@@ -233,6 +230,10 @@ body {
     
     
   }
+
+  .seleccionar{
+    font-size:3em;
+  }
   
   
   /**************estilo del card para los ejercicios  index.html********************/
@@ -297,6 +298,7 @@ body {
     padding: 10px;
     flex: 1 1 100%;
     width:100%;
+    font-size: 1.2em;
   }
   
   .cardFooter {
