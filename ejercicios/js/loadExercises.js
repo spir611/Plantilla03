@@ -10,7 +10,7 @@ function loadExercises(exercise){
             `<div class="container">
                 <div class="card">
                 <div class="card-img">
-                    <img src="../../img/calculadoracient.jpg" alt="Image ejercicio 1">
+                    <img src="../img/calculadoracient.jpg" alt="Image ejercicio 1">
                 </div>
                 <div class="cardTitle">Calculadora</div>
                 <div class="cardBody">
@@ -25,7 +25,7 @@ function loadExercises(exercise){
             `<div class="container">
                 <div class="card">
                 <div class="card-img">
-                    <img src="../../img/conversor..jpg" alt="Image ejercicio 2">
+                    <img src="../img/conversor..jpg" alt="Image ejercicio 2">
                 </div>
                 <div class="cardTitle">Cambio de Bases</div>
                 <div class="cardBody">
