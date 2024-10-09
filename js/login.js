@@ -18,7 +18,7 @@ const logoutButton=document.getElementById("logoutButton")
 const topnav=document.getElementById("topnav");
 
 //comprobamos la existencia de una cookie
- if(getCookie("logged")==="true"){
+if(getCookie("logged")==="true"){
     console.log(getCookie("logged"));
     window.location.href="./main.html";
     console.log(window.location.href);
@@ -31,30 +31,38 @@ loginForm.addEventListener("submit", function (event) {
     const nombreUsuario=usernameInput.value;
     const contrasena=passwordInput.value;
 
-   
-    //comprobramos si las credenciales son correctas    
-    if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
-        //crear una cookie
-        setCookie("logged", "true", 1) ;
-                console.log(document.cookie);  
-        loginForm.reset();  
-        //redireccion a la página principal de los ejercicios   
-        window.location.href="./main.html";
-             
+// Validación adicional usando expresión regular
+const usernameRegex = /^.{3,}$/;
+if (!usernameRegex.test(nombreUsuario)) {
+    alert("El nombre de usuario debe tener al menos 3 caracteres.");
+    loginForm.reset();
 
-    }else{
+}
 
-        //si las credenciales son incorrectas 
-            loginMessage.style.color="red";
-            loginMessage.innerText="El nombre de usuario o la contraseña es incorrecto.";
+//comprobramos si las credenciales son correctas    
+if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
+    //crear una cookie
+    setCookie("logged", "true", 1) ;
+            console.log(document.cookie);  
+    loginForm.reset();  
+    //redireccion a la página principal de los ejercicios   
+    window.location.href="./main.html";
             
-            
-    }
+
+}else{
+
+    //si las credenciales son incorrectas 
+        loginMessage.style.color="red";
+        loginMessage.innerText="El nombre de usuario o la contraseña es incorrecto.";
+        loginForm.reset();
+        
+        
+}
 });    
 
 logoutButton.addEventListener("click", function(event) {
-    deleteCookie("logged");
-    window.location.href="../index.html";
+deleteCookie("logged");
+window.location.href="../index.html";
 
 
 }); 
