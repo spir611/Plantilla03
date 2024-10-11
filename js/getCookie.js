@@ -1,14 +1,18 @@
+"use strict"
+
+
 function getCookie(cname) {
 
-    //convertir eltodos los cookies guardados en una array asociativa
+    //convertir todos los cookies guardados en array
     let cookies=document.cookie.split("; ");
 
 
     for(let i = 0; i <cookies.length; i++) {
-        //volvemos a convertir cada cookie individual en un array[nombre, valor] por lo que cookie[0]=name cookie[1]=valor
+        //division de cada cookie
         let cookie=cookies[i].split("=");
-        //comprobamos el nombre de cada cookie con el nombre que pasamos y si coinciden devolvemos el valor de la cookie
+        //comprobación existencia nombre cookie
         if(decodeURIComponent(cookie[0])==cname){
+            //devolución valor cookie
             return decodeURIComponent(cookie[1]);
         }
     }

@@ -1,11 +1,15 @@
 "use strict"
 
+//evento para cargar todo el DOM
 document.addEventListener('DOMContentLoaded', function() {
+    //creamos un array con todos los botones de la calculadora
     const buttons = document.querySelectorAll('.btn');
     const screen = document.getElementById('screen');
     let screenValue = '';
+    //guardamos el último valor para gestión de errores de operadores duplicados o iniciales no deseados
     let lastButtonText = '';
-  
+   
+    //accedemos a cada boton y gestionamos la pantalla de input o correspondiente acción
     buttons.forEach(button => {
       button.addEventListener('click', function() {
         const buttonText = this.innerText;

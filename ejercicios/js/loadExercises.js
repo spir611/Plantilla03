@@ -1,6 +1,6 @@
 "use strict"
 
-
+//cargar el ejercicio seleccionado en el contenido principal
 function loadExercises(exercise){
     const mainContent=document.getElementById("mainContent");
 

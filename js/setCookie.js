@@ -1,5 +1,6 @@
 "use strict"
 
+//función para crear la cookie
 function setCookie(cname, cvalue, exmin) {
         if(navigator.cookieEnabled==true){   
     let theDate = new Date();

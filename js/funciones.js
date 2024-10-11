@@ -6,8 +6,9 @@ function mostrar(resultado, texto) {
     resultado.innerHTML = texto;
 }
 
+//cálculos de la calculadora
 function calculate(expression) {
-    // Manejar raíz cuadrada para separar el simbolo  √ y el numero para realizar el cálculo, tomando en consideración la posibilidad de introducir numeros con decimales
+    // Manejar raíz cuadrada para separar el simbolo  √ y el numero para realizar el cálculo, considerando decimales
     
     expression = expression.replace(/√(\d*\.?\d+)/g, (match, number) => {
         return Math.sqrt(parseFloat(number));
@@ -72,7 +73,7 @@ function calculate(expression) {
     return isNaN(result) ? "ERROR" : result.toFixed(2); 
 }
 
-
+//calculo de un factorial, considerando BigInt
 function factorial(n){
     
     if((n===0n || n===1n)){
@@ -83,7 +84,7 @@ function factorial(n){
     
 }
 
-
+//conversión decimal a binario
 function convertToBinary(decimalNumber){
     if (decimalNumber === 0) {
         return "0";
@@ -97,7 +98,7 @@ function convertToBinary(decimalNumber){
 
 }
 
-
+//conversión decimal a octal
 function convertToOctal(decimalNumber){
     if (decimalNumber < 0) {
         return "-" + convertToOctal(-decimalNumber);
@@ -114,7 +115,8 @@ function convertToOctal(decimalNumber){
     }
 
 }
-    
+
+//conversión decimal a hexadecimal    
 function convertToHex(decimalNumber){
     
         if (decimalNumber < 0) {
