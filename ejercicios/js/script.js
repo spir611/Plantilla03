@@ -17,3 +17,10 @@ document.getElementById("ejerc2").addEventListener("click", function(){
     loadExercises("ejerc2");
 });
 
+document.getElementById("ejerc3").addEventListener("click", function(){
+    loadExercises("ejerc3");
+});
+
+document.getElementById("ejerc4").addEventListener("click", function(){
+    loadExercises("ejerc4");
+});

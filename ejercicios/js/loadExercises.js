@@ -35,6 +35,38 @@ function loadExercises(exercise){
                 </div>
             </div>`;
         break;
+        case "ejerc3":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img src="../img/strings_texto.jpg" alt="Image ejercicio 3">
+                </div>
+                <div class="cardTitle">Modificador de texto</div>
+                <div class="cardBody">
+                    <p>Permite realizar cambios a un texto introducido: mayúsculas o minúsculas de vocales o consonantes en distintas posiciones con la posibilidad de realizarlo de forma aleatorio a diferentes velocidades.</p>
+                </div>
+                <div class="cardFooter"><a href="../ejercicios/STRINGS/Ejercicio1/strings.html"> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
+        case "ejerc4":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img src="" alt="Image ejercicio 4">
+                </div>
+                <div class="cardTitle">Api Web</div>
+                <div class="cardBody">
+                    <p>Próximamente</p>
+                </div>
+                <div class="cardFooter"><a href=""> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
+
+
 
     }
 }
