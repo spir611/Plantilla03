@@ -24,3 +24,11 @@ document.getElementById("ejerc3").addEventListener("click", function(){
 document.getElementById("ejerc4").addEventListener("click", function(){
     loadExercises("ejerc4");
 });
+
+document.getElementById("ejerc5").addEventListener("click", function(){
+    loadExercises("ejerc5");
+});
+
+document.getElementById("ejerc6").addEventListener("click", function(){
+    loadExercises("ejerc6");
+});
