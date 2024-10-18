@@ -60,9 +60,9 @@ if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
 });    
 
 logoutButton.addEventListener("click", function(event) {
-deleteLocalStorage("loggedIn");
-localStorage.clear();
-window.location.href="../index.html";
+    event.preventDefault();
+    deleteLocalStorage("loggedIn");
+    window.location.href="../index.html";
 
 
 }); 

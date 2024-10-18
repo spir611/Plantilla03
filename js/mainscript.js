@@ -8,9 +8,9 @@ const logoutButton=document.getElementById("logoutButton");
 
 //evento al cliquear en logout para borrar cookie
 logoutButton.addEventListener("click", function(event) {
+    event.preventDefault()
     deleteLocalStorage("loggedIn");
-    localStorage.clear();
-    window.location.href="/index.html";
+    window.location.href="./index.html";
 }); 
 
 //personalización del banner de bienvenida-nombre usuario
