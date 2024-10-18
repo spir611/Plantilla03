@@ -1,5 +1,13 @@
 "use strict"
 
+const logoutButton=document.getElementById("logoutButton");
+
+//evento para logout
+logoutButton.addEventListener("click", function(event) {
+    deleteLocalStorage("loggedIn");
+    window.location.href="../../../../index.html";
+}); 
+
 
 const textarea = document.getElementById('miTextarea');
 const botones = document.querySelectorAll('.btn');

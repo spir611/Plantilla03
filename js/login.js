@@ -18,12 +18,11 @@ const logoutButton=document.getElementById("logoutButton")
 const topnav=document.getElementById("topnav");
 
 //comprobamos la existencia de una cookie
-if(getCookie("logged")==="true"){
-    console.log(getCookie("logged"));
-    window.location.href="./main.html";
+if(getLocalStorage("loggedIn")==="true"){
+    console.log(getLocalStorage("loggedIn"));
+    window.location.href="../ejercicios/ejercicios.html";
     console.log(window.location.href);
 } 
-
 //creamos un evento para cuando se hace clic en en boton de Ingresar
 loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -42,8 +41,8 @@ if (!usernameRegex.test(nombreUsuario)) {
 //comprobramos si las credenciales son correctas    
 if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
     //crear una cookie
-    setCookie("logged", "true", 1) ;
-            console.log(document.cookie);  
+    setLocalStorage("loggedIn", "true") ;
+    console.log(localStorage);  
     loginForm.reset();  
     //redireccion a la página principal de los ejercicios   
     window.location.href="./main.html";
@@ -61,7 +60,7 @@ if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
 });    
 
 logoutButton.addEventListener("click", function(event) {
-deleteCookie("logged");
+deleteLocalStorage("loggedIn");
 window.location.href="../index.html";
 
 
