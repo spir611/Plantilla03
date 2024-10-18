@@ -45,7 +45,7 @@ if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
     console.log(localStorage);  
     loginForm.reset();  
     //redireccion a la página principal de los ejercicios   
-    window.location.href="./main.html";
+    window.location.href="../main.html";
             
 
 }else{
