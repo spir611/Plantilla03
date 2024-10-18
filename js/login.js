@@ -61,7 +61,7 @@ if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
 
 logoutButton.addEventListener("click", function(event) {
 deleteLocalStorage("loggedIn");
-window.location.href="../index.html";
+window.location.href="..Plantilla03/index.html";
 
 
 }); 
