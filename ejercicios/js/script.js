@@ -5,7 +5,8 @@ const logoutButton=document.getElementById("logoutButton");
 //evento para logout
 logoutButton.addEventListener("click", function(event) {
     deleteLocalStorage("loggedIn");
-    window.location.href="../../../Plantilla03/index.html";
+    localStorage.clear();
+    window.location.href="../../../index.html";
 }); 
 
 //eventos para cargar el contenido de los ejercicios

@@ -20,7 +20,7 @@ const topnav=document.getElementById("topnav");
 //comprobamos la existencia de una cookie
 if(getLocalStorage("loggedIn")==="true"){
     console.log(getLocalStorage("loggedIn"));
-    window.location.href="../Plantilla03/ejercicios/ejercicios.html";
+    window.location.href="../ejercicios/ejercicios.html";
     console.log(window.location.href);
 } 
 //creamos un evento para cuando se hace clic en en boton de Ingresar
@@ -61,6 +61,7 @@ if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
 
 logoutButton.addEventListener("click", function(event) {
 deleteLocalStorage("loggedIn");
+localStorage.clear();
 window.location.href="../index.html";
 
 
