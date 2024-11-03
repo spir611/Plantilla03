@@ -1,13 +1,20 @@
 "use strict"
 
-const logoutButton=document.getElementById("logoutButton");
+document.addEventListener("DOMContentLoaded", function() {
+    const logoutButton = document.getElementById("logoutButton");
 
-//evento para logout
-logoutButton.addEventListener("click", function(event) {
-    deleteLocalStorage("loggedIn");
-    localStorage.clear();
-    window.location.href="../../../index.html";
-}); 
+    // Verificar que el botón logoutButton existe antes de añadir el event listener
+    if (logoutButton) {
+        // Evento al cliquear en logout para borrar cookie
+        logoutButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            deleteIndexedDB("loggedIn");
+            window.location.href = "../index.html";
+        });
+    } else {
+        console.log("logoutButton no se encontró en el DOM.");
+    }
+});
 
 //eventos para cargar el contenido de los ejercicios
 document.getElementById("ejerc1").addEventListener("click", function(){
@@ -30,6 +37,3 @@ document.getElementById("ejerc5").addEventListener("click", function(){
     loadExercises("ejerc5");
 });
 
-document.getElementById("ejerc6").addEventListener("click", function(){
-    loadExercises("ejerc6");
-});

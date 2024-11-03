@@ -1,4 +1,5 @@
 "use strict"
+console.log("Archivo cargado correctamente");
 
 function convertirAMayusculas(texto){
 

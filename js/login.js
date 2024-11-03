@@ -17,12 +17,15 @@ submitButton.disabled=false;
 const logoutButton=document.getElementById("logoutButton")
 const topnav=document.getElementById("topnav");
 
-//comprobamos la existencia de una cookie
-if(getLocalStorage("loggedIn")==="true"){
-    console.log(getLocalStorage("loggedIn"));
-    window.location.href="../ejercicios/ejercicios.html";
-    console.log(window.location.href);
-} 
+
+openDatabase();
+//comprobamos el estado de login al cargar la pagina para comprobar la bbdd
+document.addEventListener("DOMContentLoaded", function() {
+    checkLoginStatus();
+});
+
+
+
 //creamos un evento para cuando se hace clic en en boton de Ingresar
 loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -37,34 +40,39 @@ if (!usernameRegex.test(nombreUsuario)) {
     loginForm.reset();
 
 }
-
 //comprobramos si las credenciales son correctas    
-if(nombreUsuario===USERNAMEDB && contrasena===PASSWORDDB){
-    //crear una cookie
-    setLocalStorage("loggedIn", "true") ;
-    console.log(localStorage);  
-    loginForm.reset();  
-    //redireccion a la página principal de los ejercicios   
-    window.location.href="../main.html";
-            
+iniciarSesion(nombreUsuario, contrasena);
+});
 
-}else{
+async function checkLoginStatus() {
+    await openDatabase(); // Asegúrate de que la base de datos esté abierta antes de la verificación
 
-    //si las credenciales son incorrectas 
-        loginMessage.style.color="red";
-        loginMessage.innerText="El nombre de usuario o la contraseña es incorrecto.";
-        loginForm.reset();
-        
-        
+    const result = await getIndexedDB("loggedIn");
+    if (result === "true") {
+        console.log("Usuario ya ha iniciado sesión.");
+        // Si el usuario ya está logueado, redirigir a la página principal de ejercicios
+        window.location.href = "./ejercicios/ejercicios.html";
+    } else {
+        console.log("No se encontró el valor para loggedIn, redirigiendo al login.");
+    }
 }
-});    
-
-logoutButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    deleteLocalStorage("loggedIn");
-    window.location.href="../index.html";
 
 
-}); 
+async function iniciarSesion(nombreUsuario, contrasena) {
 
+    if (nombreUsuario === USERNAMEDB && contrasena === PASSWORDDB) {
+        console.log(nombreUsuario === USERNAMEDB && contrasena === PASSWORDDB);
+        try {
+            await setIndexedDB("loggedIn", "true");
+            console.log("Usuario logueado exitosamente en IndexedDB");
+            loginForm.reset();
+            // Redirección a la página principal
+            window.location.href = "../main.html";
+        } catch (error) {
+            console.error("Error al guardar el estado de login en IndexedDB:", error);
+        }
+    } else {
+        console.log("Credenciales incorrectas");
+    }
+}
 

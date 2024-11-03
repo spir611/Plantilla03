@@ -45,3 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+
+  const logoutButton=document.getElementById("logoutButton");
+
+//evento al cliquear en logout para borrar cookie
+logoutButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    deleteIndexedDB("loggedIn");
+    window.location.href="../../../../index.html";
+}); 

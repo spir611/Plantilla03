@@ -70,31 +70,17 @@ function loadExercises(exercise){
             `<div class="container">
                 <div class="card">
                 <div class="card-img">
-                    <img src="" alt="Image ejercicio 5">
+                    <img width=96% src="../img/matriz.jpg" alt="Image ejercicio 5">
                 </div>
-                <div class="cardTitle">Arrays</div>
+                <div class="cardTitle">Matrices</div>
                 <div class="cardBody">
-                    <p>Próximamente</p>
+                    <p>En este ejercicio trabajamos con matrices, creando matrices con valores aleatorios y la posibilidad de generarlas a velocidades distintas. Adicionalmente podemos seleccionar entre tres operaciones sumar restar y multiplicar las dos matrices generadas.</p>
                 </div>
-                <div class="cardFooter"><a href=""> Solución &gt;&gt;</a></div>
+                <div class="cardFooter"><a href="../ejercicios/ARRAYS/matrix.html"> Solución &gt;&gt;</a></div>
                 </div>
             </div>`;
         break;
-        case "ejerc6":
-            mainContent.innerHTML=
-            `<div class="container">
-                <div class="card">
-                <div class="card-img">
-                    <img src="" alt="Image ejercicio 6">
-                </div>
-                <div class="cardTitle">Arrays</div>
-                <div class="cardBody">
-                    <p>Próximamente</p>
-                </div>
-                <div class="cardFooter"><a href=""> Solución &gt;&gt;</a></div>
-                </div>
-            </div>`;
-        break;
+        
 
 
     }
