@@ -2,15 +2,15 @@
 
 function grabarDato(nombre, valor) {
     console.log("Grabando dato...");
-    let caducidadCookie = 1 * 60 * 1000; // caducidad por defecto, 1 minutos
+    let caducidadCookie = 1 * 60 * 1000;
 
-    let theDate = new Date(); // obtengo la fecha actual
-    let currentMiliseconds = theDate.getTime(); // obtengo la fecha actual en milisegundos
-    let expirationMiliseconds = currentMiliseconds + caducidadCookie; // añado la caducidad en milisegundos
-    theDate.setTime(expirationMiliseconds); // actualizo la fecha (ahora con el incremento de la caducidad)
+    let theDate = new Date(); 
+    let currentMiliseconds = theDate.getTime(); 
+    let expirationMiliseconds = currentMiliseconds + caducidadCookie; 
+    theDate.setTime(expirationMiliseconds); 
     console.log(`Fecha caducidad: ${theDate}`);
 
-    // creo la 'cookie' con los atributos correspondientes
+    
     document.cookie = encodeURIComponent(nombre) + "=" + encodeURIComponent(valor) + ";expires=" + theDate.toUTCString() + ";path=./;SameSite=Strict;Secure";
 
     mostrarDatos(); 

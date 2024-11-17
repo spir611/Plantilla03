@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Botones para interactuar con la API
     document.getElementById("btn1").addEventListener("click", obtenerUnPersonaje);
-  /*   document.getElementById("btn5").addEventListener("click", obtenerCincoPersonajes); */
+  
     const btn5 = document.getElementById("btn5");
 
     // Remueve cualquier evento duplicado previamente (precaución adicional)
@@ -67,10 +67,7 @@ async function obtenerUnPersonaje() {
 
         const datos = await respuesta.json();
 
-        /* // Agregar el personaje a la tabla
-        agregarFila(datos); */
-
-        // Guardar en IndexedDB
+       
         grabarDato(datos.name,datos.species,datos.image);
 
         // Mostrar aviso (opcional)
@@ -91,15 +88,13 @@ async function obtenerCincoPersonajes() {
             if (!respuesta.ok) throw new Error(`Error en la solicitud: ${respuesta.status}`);
             const datos = await respuesta.json();
 
-            // Agregar cada personaje a la tabla
-            /* agregarFila(datos); */
-
+           
             // Guardar en IndexedDB
             grabarDatoApi(datos.name,datos.species,datos.image);
             
         }
         mostrarDatos();
-        // Mostrar aviso (opcional)
+       
         console.log("Cinco personajes cargados correctamente.");
     } catch (error) {
         mostrarError(`Error al obtener los personajes: ${error.message}`);
@@ -113,7 +108,7 @@ async function obtenerCincoPersonajes() {
         );
         const respuestas = await Promise.all(promesas);
 
-        // Procesa cada respuesta y guarda los datos
+  
         for (const respuesta of respuestas) {
             if (!respuesta.ok) {
                 throw new Error(`Error en la solicitud: ${respuesta.status}`);
@@ -126,14 +121,14 @@ async function obtenerCincoPersonajes() {
         }
 
         console.log("Cinco personajes cargados correctamente.");
-        mostrarDatos(); // Muestra los datos después de grabar todos
+        mostrarDatos(); 
     } catch (error) {
         console.error("Error al obtener los personajes:", error);
     }
 }
 const logoutButton=document.getElementById("logoutButton");
 
-//evento al cliquear en logout para borrar cookie
+
 logoutButton.addEventListener("click", function(event) {
     event.preventDefault();
     deleteIndexedDB("loggedIn");
