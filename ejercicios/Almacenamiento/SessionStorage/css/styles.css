@@ -1,6 +1,6 @@
 /***********************estilo general del body************************/
 body {
-    background: url(../img/bgblanco.png) repeat;
+    background: url(../../../../img/bgblanco.png) repeat;
     text-align: justify;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 14px;
@@ -128,8 +128,9 @@ body {
   /*************estilo del contenedor central********/
   .container {
     display: flex;
-        justify-content: center;
-    width:100%;
+    justify-content: center;
+    width:80%;
+    margin:10px;
   
   }
 
@@ -142,41 +143,46 @@ body {
   width: 100%;
  }
 
-.cardStrings{
+.card{
     min-width: 300px;
-    max-width: 700px;
+    max-width: 600px;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 5px lightgrey;
-    margin: 20px;
+   
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    overflow: wrap;
+    overflow: none;
+    margin: auto;
 
 }
 
-.cardStringBody{
+.cardBody{
     padding:10px;
     
 
 }
 
-.cardStringTitle{
-  text-align:center;
+
+
+.cardTitle{
+text-align:center;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(149, 148, 227)
 }
 
-
-
-.btn{
+.btn, button{
   padding: 5px;
   margin:10px 5px;
   border-radius: 5px;
   background-color:  rgb(149, 148, 227, .8);
   color: white;
   font-weight: bold;
+  border:solid 1px rgb(149, 148, 227)
 }
 
-.btn:hover{
+.btn:hover, button:hover{
 
   background-color: blue;
 }
@@ -184,10 +190,38 @@ body {
 
 
 
+.dimension{
+  margin-bottom: 10px;
 
 
+}
 
 
+fieldset {
+  padding:20px;
+  border: solid 1px rgb(149, 148, 227);
+  background-color: white;
+  
+}
+
+input{
+  border-radius:5px;
+  padding: 5px;
+  border: solid 1px rgb(149, 148, 227);
+  background-color: white;
+}
+
+input:focus{
+  background-color: rgba(190, 190, 244, 0.25);
+  outline: 2px solid rgb(149, 148, 227);
+  padding: 8px;
+  
+}
+
+legend{
+  color:rgb(149, 148, 227);
+  font-weight: bold;
+}
 
 /*********************card footer pagina siguiente********************/
 .cardFooter {
@@ -224,7 +258,7 @@ body {
 
 /***********************estilo del footer pagina**************/
 .footer {
- 
+ position: fixed;
   background-color: blue;
   opacity: 0.5;
   text-align: center;
@@ -232,7 +266,6 @@ body {
   color: rgba(255, 250, 250, 0.957);
   text-shadow: 2px 2px 4px rgba(49, 7, 164, 0.75);
   width:100%;
-  position: fixed;
   bottom: 0;
 }
 

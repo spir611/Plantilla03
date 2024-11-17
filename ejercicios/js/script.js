@@ -37,3 +37,19 @@ document.getElementById("ejerc5").addEventListener("click", function(){
     loadExercises("ejerc5");
 });
 
+document.getElementById("ejerc6").addEventListener("click", function(){
+    loadExercises("ejerc6");
+});
+
+document.getElementById("ejerc7").addEventListener("click", function(){
+    loadExercises("ejerc7");
+});
+
+document.getElementById("ejerc8").addEventListener("click", function(){
+    loadExercises("ejerc8");
+});
+
+document.getElementById("ejerc9").addEventListener("click", function(){
+    loadExercises("ejerc9");
+});
+

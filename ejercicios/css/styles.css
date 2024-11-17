@@ -358,4 +358,6 @@ body {
     color: rgba(255, 250, 250, 0.957);
     text-shadow: 2px 2px 4px rgba(49, 7, 164, 0.75);
     width:100%;
+    position: fixed;
+    bottom: 0;
   }

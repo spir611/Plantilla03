@@ -66,13 +66,17 @@ Destacan el uso de:
 <p>En esta actividad se ha pasado a guardar los datos del login en una BBDD usando IndexedDB para que la sesión sea mas persistente. Se ha creado las tres funciones similares a Local Storage: getIndexedDB, setIndexedDB, deleteIndexedDB. Adicionalmente se ha creado una nueva función que comprueba si una bbdd, utilizando IndexedDB, con el mismo nombre y version se ha creado anteriormente y si no es el caso se crea. En otro caso se indica si se ha abierto la conexión con exito (onsuccess) o sin éxito (onerror). La sesión se mantiene abiertoa mientras que no se pulse en logout porque se comparan los valores con la bbdd (indexedDB) cada vez que se recarga la página o se vuelve al index.html principal. Los valores solamente se eliminan de la bbdd cuando se pulsa en logout y es solamente en este momento cuando se obliga al usuario a loguear de nuevo.</p>  
 <br/>
 <p>Adicionalmente se ha añadido un nuevo ejercicio en el desplegable: Arrays. Se trata de un generador de Matrices que permite generar los valores de dimensión y de los rangos inferior y superior a partir de los cuales se generar los matrices de forma aleatorio pulsando en Generar Matrices. Igualmente se pueden generar las matrices usando los valores previamente creado aleatoriamente a diferentes velocidades (rápido, lento, normal (aleatorio) or parar). Una vez generado las matrices se puede hacer tres operaciones con las dos matrices generadas: sumar, restar y multiplicar. Para mejorar la calidad del generador se ha incluido dos botones de limpieza: una para borrar los valores de dimensión y los dos rangos y otro para borrar el resultado de las operaciones: sumar, restar y multiplicar</p>
-<br/>      
+<br/> 
+<h5>Actividad 7: Almacenamiento con Cookies, Session Storage Local Storage, CIndexedDB</h5>
+<p>En esta actividad se almacenan datos mediante las cuatro formas locales y se realiza un CRUD sobre estos: guardar, listar, borrar y actualizar. Las funciones de guardar, borrar y actualizar se han llevado a cabo a través de un botón con un evento "click", mientras que el listado se muestra en forma de una tabla dinámica y automática por debajo del propio formulario de entrada que se actualiza al guardar o borrar un dato. Con IndexedDB se han creado dos botones adicionales en el formulario que permiten cargar datos de la API Rick y Morti de uno en uno o de cinco en cinco, los cuales se almacenan individualmente en la bbdd DATOSRM en la tabla "datos" igual que los introducidos en el formulario, pero se cargan de golpe en la tabla en a propia página web. En caso de IndexedDB se almacenan tres valores: nombre, especie y una foto del personaje. En cambio en los otros tres casos de almacenamiento se introducen unicamente dos campos un nombre y un valor.</p>  
+<br/>
+<br/>     
 <hr/>
 <br>
 <h3>**Webgrafía**</h3>  
 <br>
 <p>=>www.W3schools.es</p>
-<p>=>apuntes de clase : Desarrollo Web Entorno Cliente - CFIFP Alan Turing (curso 2024/25)</p>
+<p>=>apuntes de clase : Desarrollo Web Entorno Cliente - CFIFP Alan Turing (curso 2024/25)</p> 
 
 <br>
 <hr/>

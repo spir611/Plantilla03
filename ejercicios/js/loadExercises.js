@@ -80,6 +80,66 @@ function loadExercises(exercise){
                 </div>
             </div>`;
         break;
+        case "ejerc6":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img width=90% src="../img/cookies.png" alt="Image ejercicio 6">
+                </div>
+                <div class="cardTitle">Cookies</div>
+                <div class="cardBody">
+                    <p>En este ejercicio trabajamos con almacenamiento usando cookies.</p>
+                </div>
+                <div class="cardFooter"><a href="../ejercicios/ALMACENAMIENTO/Cookies/cookies.html"> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
+        case "ejerc7":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img width=96% src="../img/session.jpg" alt="Image ejercicio 7">
+                </div>
+                <div class="cardTitle">Session Storage</div>
+                <div class="cardBody">
+                    <p>En este ejercicio trabajamos con almacenamiento usando Session Storage.</p>
+                </div>
+                <div class="cardFooter"><a href="../ejercicios/ALMACENAMIENTO/SessionStorage/sessionStorage.html"> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
+        case "ejerc8":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img width=96% src="../img/local.jpg" alt="Image ejercicio 8">
+                </div>
+                <div class="cardTitle">Local Storage</div>
+                <div class="cardBody">
+                    <p>En este ejercicio trabajamos con almacenamiento usando local storage.</p>
+                </div>
+                <div class="cardFooter"><a href="../ejercicios/ALMACENAMIENTO/LocalStorage/localStorage.html"> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
+        case "ejerc9":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img width=96% src="../img/indexDB.jpg" alt="Image ejercicio 9">
+                </div>
+                <div class="cardTitle">Indexed DB</div>
+                <div class="cardBody">
+                    <p>En este ejercicio trabajamos con almacenamiento usando indexedDB. Además recogemos datos de un api de uno en uno o de cinco en cinco. Se realiza un CRUD: guardar, borrar, leer y actualizar.</p>
+                </div>
+                <div class="cardFooter"><a href="../ejercicios/ALMACENAMIENTO/IndexedDB/indexedDB.html"> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
         
 
 
