@@ -140,8 +140,51 @@ function loadExercises(exercise){
                 </div>
             </div>`;
         break;
-        
-
-
+       
+        case "ejerc10":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img width=96% src="../img/lavadora.jpg" alt="Image ejercicio 10">
+                </div>
+                <div class="cardTitle">Hacer la Colada con Pila</div>
+                <div class="cardBody">
+                    <p>En este ejercicio introducimos y sacamos prendas de la colada con la estructura Pila utilizando Programación Orientada a Objetos y modularización.</p>
+                </div>
+                <div class="cardFooter"><a href="../ejercicios/Estructuras/colada/index.html"> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
+        case "ejerc11":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img width=96% src="../img/taller.jpg" alt="Image ejercicio 11">
+                </div>
+                <div class="cardTitle">Taller con la estructura cola</div>
+                <div class="cardBody">
+                    <p>En este ejercicio usamos la estructura de cola junto a la programación orientada a objetos y la modularización.</p>
+                </div>
+                <div class="cardFooter"><a href="../ejercicios/Estructuras/taller/index.html"> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
+        case "ejerc12":
+            mainContent.innerHTML=
+            `<div class="container">
+                <div class="card">
+                <div class="card-img">
+                    <img width=96% src="../img/lista.avif" alt="Image ejercicio 12">
+                </div>
+                <div class="cardTitle">Gestor de tareas con una estructura lista</div>
+                <div class="cardBody">
+                    <p>En este ejercicio gestionamos un tareas de dos forma con una estructura lista normal y otra prioritaria..</p>
+                </div>
+                <div class="cardFooter"><a href="../ejercicios/Estructuras/tareas/index.html"> Solución &gt;&gt;</a></div>
+                </div>
+            </div>`;
+        break;
     }
 }

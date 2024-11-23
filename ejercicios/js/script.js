@@ -53,3 +53,12 @@ document.getElementById("ejerc9").addEventListener("click", function(){
     loadExercises("ejerc9");
 });
 
+document.getElementById("ejerc10").addEventListener("click", function(){
+    loadExercises("ejerc10");
+});
+document.getElementById("ejerc11").addEventListener("click", function(){
+    loadExercises("ejerc11");
+});
+document.getElementById("ejerc12").addEventListener("click", function(){
+    loadExercises("ejerc12");
+});
